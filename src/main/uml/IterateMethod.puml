@@ -1,0 +1,13 @@
+@startuml
+start
+:if n <= 1 then return n;
+:set prev = 0;
+:set curr = 1;
+repeat
+  :temp = curr;
+  :curr = curr + prev;
+  :prev = temp;
+repeat while (i <= n)
+:return curr;
+stop
+@enduml

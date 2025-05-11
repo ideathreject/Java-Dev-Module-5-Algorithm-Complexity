@@ -1,0 +1,16 @@
+@startuml
+start
+
+:if n <= 1;
+if (n <= 1?) then (yes)
+  :return n;
+  stop
+else (no)
+  :calculate(n - 1);
+  :calculate(n - 2);
+  :calculate(n - 1) + calculate(n - 2);
+  :return result;
+  stop
+endif
+
+@enduml
